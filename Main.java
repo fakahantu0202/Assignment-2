@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-        surah1 s = new surah1() {};
+        surah s = new surah() {};
         String username, firstName, lastName, ayat;
         s.welcome();
         System.out.println("Sila Nyatakan Nama Anda : ");
@@ -25,7 +25,7 @@ public class Main {
         firstName = scan.nextLine();
         p.setFirstName(firstName);
         
-        System.out.println("Sila Nyatakan Nama Kedua Anda : ");
+        System.out.println("Sila Nyatakan Nama Anda Yang Seterusnya : ");
         lastName = scan.nextLine();
         p.setLastName(lastName);
         
@@ -35,6 +35,10 @@ public class Main {
         System.out.println("Sila Nyatakan Surah Yang Anda Mahukan :  (alFatihah , anNas , alFalaq , alIkhlas)");
         ayat = scan.nextLine();
         
+        System.out.println("Nama Peserta: " + p.toString());
+        s.setAyat(ayat);
+        System.out.println("Surah Yang Dipilih: " + s.getAyat()); 
+        System.out.println("");    
         
     }  
 }
