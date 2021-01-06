@@ -24,17 +24,15 @@ class surah extends surah1 {
     private String peserta;
     private String username;
     
-    public surah(String username){
+    public surah(){
         
-        this.ayat = "alFatihah , anNas , alFalaq , alIkhlas";
+        this.ayat = ayat;
         this.peserta = "MUHAMMAD FAKHRUDDIN";
-        this.username = username;
-
+    }
         
-        /*    public surah(String username)
-        {
+    public surah(String username){
         this.username = username;
-        }*/
+    }
     
     public void printUsername(String peserta)                                     
     {
